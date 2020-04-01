@@ -1,5 +1,5 @@
 ## Peer Graded Assignment ##
 
-### date  ###
+### echo "nanoTime()"  ###
 
 Lines of code for file guessinggame.txt: wc -l guessinggame.txt
