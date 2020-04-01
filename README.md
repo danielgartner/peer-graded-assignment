@@ -1,5 +1,5 @@
 ## Peer Graded Assignment ##
 
-### echo "nanoTime()"  ###
+### 3/31/2020 20:39  ###
 
-Lines of code for file guessinggame.txt: wc -l guessinggame.txt
+Lines of code for file guessinggame.txt: 28
