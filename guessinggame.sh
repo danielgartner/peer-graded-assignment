@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 function guessinggame {	
 
 echo "Please guess the number of files in the current directory."
