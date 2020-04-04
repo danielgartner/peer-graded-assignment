@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
-function guessinggame {	
+function guessinggame {
+
+filecount="$(ls -1 | wc -l)"
 
 echo "Please guess the number of files in the current directory."
 
@@ -9,22 +11,34 @@ do
 
 	read response
 
-	if [[ $response -gt 3 ]]
+	if [[ $response =~ ^[0-9]+$ ]]
 	then
-		echo "Too high.  Please guess again."
-		continue
 
-	elif [[ $response -lt 3 ]]
-	then
-		echo "Too low.  Please guess again."
-		continue
+		if [[ $response -gt $filecount ]]
+		then
+			echo "Too high.  Please guess again."
+			continue
+
+		elif [[ $response -lt $filecount ]]
+		then
+			echo "Too low.  Please guess again."
+			continue
+
+		elif [[ $response -eq $filecount ]]
+		then
+			echo "Congratulations!  You guessed correctly."
+
+		fi
+		break
 
 	else
-		echo "Congratulations!  You guessed correctly."
-	
-	fi		
-	break
+		echo "Invalid response.  Please guess again."
+		continue
+
+	fi
 
 done
 
 }
+
+guessinggame

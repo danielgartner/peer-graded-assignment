@@ -1,3 +1,3 @@
 ## Title of project: guessinggame.sh
-### makefile was run on: Thu Apr  2 22:44:33 EDT 2020
-Number of lines of code: 30
+### makefile was run on: Sat Apr  4 18:20:26 EDT 2020
+Number of lines of code: 44
